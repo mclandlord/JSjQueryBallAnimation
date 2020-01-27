@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Removing all the Contents using empty() jQuery</title>
+<style type="text/css">
+.container{
+    padding: 15px;
+    background: #1EBBA3;
+    border: 1px solid #bead18;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#btn_toggle").click(function(){
+       $(".add_here").toggleClass("container");
+    });
+});
+</script>
+</head>
+<body>
+    <div class="add_here container">
+        <h1>Hello World!</h1>
+        <p><strong>Note:</strong> If you click the following button it
+        will add or remove the '.container class', where is add_here class exist </p>
+        <button type="button" id="btn_toggle">Click Here</button>
+    </div>
+</body>
+</html>                           
