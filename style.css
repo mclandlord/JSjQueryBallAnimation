@@ -24,9 +24,17 @@ body {
   width: 100%;
   overflow: hidden;
   animation: slide-right 1.5s;
+  -webkit-animation: slide-right 1.5s;
 }
 
 @keyframes slide-right {
+  0% {font-size: 130%; opacity:0.8; font-style: italic; margin-left: -50%; width: 100%;}
+  50% {font-size: 70%; opacity:0.2; font-style: italic; margin-left: 20%; width: 100%;}
+  99% {font-size: 95%; opacity:0.5; font-style: italic; margin-left: 1%; width: 100%;}
+  100% {font-size: 100%; opacity:1; font-style: normal; margin-left: 0%; width: 100%;}
+}
+
+@-webkit-keyframes slide-right {
   0% {font-size: 130%; opacity:0.8; font-style: italic; margin-left: -50%; width: 100%;}
   50% {font-size: 70%; opacity:0.2; font-style: italic; margin-left: 20%; width: 100%;}
   99% {font-size: 95%; opacity:0.5; font-style: italic; margin-left: 1%; width: 100%;}
