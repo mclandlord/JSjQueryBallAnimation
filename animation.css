@@ -10,12 +10,13 @@ animation-duration: 3s;
 animation-direction: alternate;
 animation-delay: 0s;
 -webkit-animation-name: anime;
--webkit-animation-duration: 3s;
+-webkit-animation-duration: 2s;
 -webkit-animation-direction: alternate;
 -webkit-animation-delay: 0s;
 border: 0px solid black;
 }
 
+/* ZIG-ZAG PATTERN
 @keyframes anime {
     0% {opacity: 0;}
     1% {opacity: 1;}
@@ -47,4 +48,35 @@ border: 0px solid black;
     90% {background-color: whitesmoke; left: 0px; top: 400px; opacity: .90;}
     99% {background-color: green; left: 0px; top: 0px;}
     100% {opacity: 1;}
+} */
+
+/* SWIRL PATTERN  */
+@keyframes anime {
+
+    0% {background-color: beige; left: 400px; top: 400px;}
+    6% {background-color: yellow; left: 480px; top: 320px;}
+    11% {background-color: blue; left: 440px; top: 280px;}
+    16% {background-color: green; left: 360px; top: 320px;}
+    21% {background-color: orange; left: 300px; top: 400px;}
+    26% {background-color: yellow; left: 300px; top: 500px;}
+    30% {background-color: coral; left: 440px; top: 480px;}
+    35% {background-color: violet; left: 520px; top: 380px;}
+    40% {background-color: blue; left: 560px; top:240px;}
+    45% {background-color: whitesmoke; left: 460px; top: 180px;}
+    50% {background-color: green; left: 300px; top: 220px;}
+    55% {background-color: yellow; left: 240px; top: 380px;}
+    60% {background-color: blue; left: 220px; top: 580px;}
+    64% {background-color: green; left: 390px; top: 660px;}
+    68% {background-color: orange; left: 680px; top: 400px;}
+    72% {background-color: yellow; left: 720px; top: 100px;}
+    76% {background-color: coral; left: 420px; top: 40px;}
+    80% {background-color: violet; left: 200px; top: 200px;}
+    83% {background-color: blue; left: 100px; top:400px;}
+    86% {background-color: whitesmoke; left: 80px; top: 600px;}
+    89% {background-color: green; left: 200px; top: 800px;}
+    92% {background-color: yellow; left: 400px; top: 760px;}
+    95% {background-color: blue; left: 600px; top: 680px;}
+    98% {background-color: green; left: 740px; top: 500px;}
+    100% {background-color: orange; left: 800px; top: 0px;}
+
 }
